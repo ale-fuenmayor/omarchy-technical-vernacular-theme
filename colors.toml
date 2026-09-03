@@ -1,0 +1,56 @@
+# Technical Vernacular — derived from AF-BG-001 personal brand system, rev 1.0
+# Base: Omarchy stock "White". Ink on paper, one vermillion accent.
+# ANSI slots use the guide's data-viz extension (SERIES 01-06); every slot
+# measures >= 4.5:1 against PAPER, the terminal ground.
+
+mode = "light"
+
+# ACCENT   · vermillion, emphasis only
+accent = "#B8471C"
+# PAPER-ALT deep
+selection = "#DED6C4"
+# INK-FAINT
+muted = "#8F887B"
+
+# PAPER
+background = "#F2ECE0"
+# PAPER-ALT
+dark_background = "#E8E1D2"
+# derived step
+darker_background = "#DED6C4"
+# derived step
+lighter_background = "#C9C0AC"
+
+# INK · never pure black
+foreground = "#1A1712"
+# INK-FAINT
+dark_foreground = "#8F887B"
+# INK
+light_foreground = "#1A1712"
+# REDACT
+bright_foreground = "#0E0C08"
+
+# Data-viz extension mapped to ANSI
+# ACCENT     · vermillion
+red = "#B8471C"
+# SERIES 06  · olive
+yellow = "#7A6A2E"
+# SERIES 04  · tan
+orange = "#8A6E4B"
+# SERIES 03  · deep green
+green = "#33413B"
+# SERIES 05  · slate
+cyan = "#4A5A63"
+# SERIES 05  · shifted blue
+blue = "#2F4668"
+# extended   · muted plum
+magenta = "#6E4B5A"
+# SERIES 04  · tan
+brown = "#8A6E4B"
+
+bright_red = "#8E3212"
+bright_yellow = "#5C4F1C"
+bright_green = "#4A6355"
+bright_cyan = "#4E6C74"
+bright_blue = "#48648F"
+bright_magenta = "#7E4A62"

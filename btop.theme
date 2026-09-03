@@ -1,0 +1,69 @@
+# Technical Vernacular — btop
+# Paper ground, ink text. Graphs step through the data-viz series; the
+# temperature gradient ends on ACCENT so the alarm state is the accent.
+
+theme[main_bg]="#F2ECE0"
+theme[main_fg]="#1A1712"
+theme[title]="#1A1712"
+theme[hi_fg]="#B8471C"
+theme[selected_bg]="#DED6C4"
+theme[selected_fg]="#1A1712"
+theme[inactive_fg]="#8F887B"
+theme[graph_text]="#5C554A"
+theme[meter_bg]="#E8E1D2"
+theme[proc_misc]="#5C554A"
+
+# Box outlines — INK-FAINT minor rules
+theme[cpu_box]="#8F887B"
+theme[mem_box]="#8F887B"
+theme[net_box]="#8F887B"
+theme[proc_box]="#8F887B"
+theme[div_line]="#C9C0AC"
+
+# Temperature: olive -> tan -> vermillion (alarm lands on ACCENT)
+theme[temp_start]="#7A6A2E"
+theme[temp_mid]="#8A6E4B"
+theme[temp_end]="#B8471C"
+
+# CPU: slate -> blue -> plum
+theme[cpu_start]="#4A5A63"
+theme[cpu_mid]="#2F4668"
+theme[cpu_end]="#6E4B5A"
+
+theme[free_start]="#8F887B"
+theme[free_mid]="#5C554A"
+theme[free_end]="#33413B"
+
+theme[cached_start]="#4A5A63"
+theme[cached_mid]="#2F4668"
+theme[cached_end]="#48648F"
+
+theme[available_start]="#8F887B"
+theme[available_mid]="#8A6E4B"
+theme[available_end]="#7A6A2E"
+
+theme[used_start]="#7A6A2E"
+theme[used_mid]="#8A6E4B"
+theme[used_end]="#B8471C"
+
+theme[download_start]="#33413B"
+theme[download_mid]="#4A6355"
+theme[download_end]="#4A5A63"
+
+theme[upload_start]="#6E4B5A"
+theme[upload_mid]="#7E4A62"
+theme[upload_end]="#B8471C"
+
+theme[process_start]="#4A5A63"
+theme[process_mid]="#2F4668"
+theme[process_end]="#B8471C"
+
+# Graph gradient — paper through ink, ending on accent
+theme[gradient_color_0]="#F2ECE0"
+theme[gradient_color_1]="#DED6C4"
+theme[gradient_color_2]="#C9C0AC"
+theme[gradient_color_3]="#8F887B"
+theme[gradient_color_4]="#5C554A"
+theme[gradient_color_5]="#33413B"
+theme[gradient_color_6]="#8A6E4B"
+theme[gradient_color_7]="#B8471C"

@@ -1,0 +1,13 @@
+# Lock screen. The shell blurs the CURRENT WALLPAPER behind the input field and
+# does not darken it, so this is ink-on-paper like everything else — not a dark
+# surface. The focused field takes ACCENT: one accent, one job. Error text uses
+# STAMP rather than ACCENT because it is small (5.73:1 vs 4.51:1 on paper).
+
+background       = "#F2ECE0"   # PAPER · card over the blurred wallpaper
+text             = "#1A1712"   # INK
+placeholder      = "#8F887B"   # INK-FAINT
+text-error       = "#A03A18"   # STAMP
+border           = "#8F887B"   # INK-FAINT · minor rule
+border-active    = "#B8471C"   # ACCENT · the one emphasis
+border-error     = "#A03A18"   # STAMP
+selection        = "#DED6C4"   # PAPER-ALT deep
