@@ -34,15 +34,46 @@ slot measures at least 4.5:1 against Paper.
 
 ## Install
 
+This theme ships a `hyprland.lua`, and Omarchy will not load Lua from a theme it
+cloned itself. `omarchy theme set` treats any theme directory containing a
+`.git` as untrusted and stages no `.lua` from it at all, warning:
+
+```
+Ignored in ~/.config/omarchy/themes/technical-vernacular: hyprland.lua
+A theme installed from a git repo cannot supply Lua, a terminal config, or vscode.json.
+```
+
+So `omarchy theme install` gets the palette but leaves the window chrome — the
+border colours and the 2/6 gaps — at Omarchy's defaults. Clone and symlink
+instead; a symlinked theme is your own working copy, which Omarchy trusts:
+
 ```bash
-omarchy theme install https://github.com/ale-fuenmayor/omarchy-technical-vernacular-theme
+git clone https://github.com/ale-fuenmayor/omarchy-technical-vernacular-theme \
+  ~/Projects/omarchy-technical-vernacular-theme
+ln -s ~/Projects/omarchy-technical-vernacular-theme \
+  ~/.config/omarchy/themes/technical-vernacular
 omarchy theme set technical-vernacular
 ```
 
-Update later with:
+Update with a pull and a re-apply:
 
 ```bash
-omarchy theme update
+git -C ~/Projects/omarchy-technical-vernacular-theme pull
+omarchy theme set technical-vernacular
+```
+
+`omarchy theme update` does **not** cover this theme. It pulls only the themes
+Omarchy cloned itself and skips symlinks by design, so it would report nothing
+and quietly leave the theme unchanged.
+
+### Palette only
+
+If you don't want the window chrome, the one-line install is fine — everything
+except `hyprland.lua` applies, and `omarchy theme update` then works normally:
+
+```bash
+omarchy theme install https://github.com/ale-fuenmayor/omarchy-technical-vernacular-theme
+omarchy theme set technical-vernacular
 ```
 
 ## Files
@@ -50,7 +81,7 @@ omarchy theme update
 | File | Purpose |
 |------|---------|
 | `colors.toml` | core palette consumed by Omarchy's theme engine |
-| `hyprland.lua` | window chrome — border colours, gaps, groupbar |
+| `hyprland.lua` | window chrome — border colours, gaps, groupbar (needs the symlink install) |
 | `shell.lock.toml` | lock screen surface |
 | `btop.theme`, `chromium.theme`, `icons.theme` | app theming |
 | `backgrounds/` | paper, blueprint and survey wallpapers |
